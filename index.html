@@ -1,16 +1,20 @@
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Collaborative Sticker Book</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     </head>
 
     <body>
-        <img src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif" can-move id="openSign"/>
-        <img src="media/smokey_hearts.gif" can-move id="smokeyHearts" />
-        <img src="media/smokey_spooky.gif" can-move id="smokeySpook" />
+        <img src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif" can-move id="openSign" class="sticker"/>
+        <img src="images/smokey_hearts.gif" can-move id="smokeyHearts" class="sticker"/>
+        <img src="images/smokey_spooky.gif" can-move id="smokeySpook" class="sticker"/>
 
-        <!-- Import library -->
+        <!-- Import playhtml library -->
         <script type="module" src="https://unpkg.com/playhtml@latest/dist/init.es.js"></script>
     </body>
 </html>
