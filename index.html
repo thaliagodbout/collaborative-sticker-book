@@ -6,29 +6,9 @@
     </head>
 
     <body>
-        <!-- ... html elements here -->
-        <!-- valid example -->
-        <img
-        src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif"
-        can-move
-        id="openSign"
-        />
-        <!-- INVALID EXAMPLE <img src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif" can-move /> -->
-        <!-- import the script -->
-    
-        <!-- Option 1 (simplest, no customization) -->
-        <script
-            type="module"
-            src="https://unpkg.com/playhtml@latest/dist/init.es.js"
-            ></script>
-        
-            <!-- Option 2 (customize options to specify the room everyone connects to (a unique ID) or use your own partykit provider) -->
-            <script type="module">
-            import "https://unpkg.com/playhtml@latest";
-            playhtml.init({
-                room: "my-room",
-                host: `${myPartykitUser}.partykit.dev`,
-            });
-        </script>
+        <img src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif" can-move id="openSign"/>
+
+        <!-- Import library -->
+        <script type="module" src="https://unpkg.com/playhtml@latest/dist/init.es.js"></script>
     </body>
 </html>
