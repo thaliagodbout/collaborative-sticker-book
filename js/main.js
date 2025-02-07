@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 var fs = require('fs');
 var files = fs.readdirSync('./images');
 
