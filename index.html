@@ -13,24 +13,23 @@
             body {
               background-image: url("./images/starry.gif");
             }
+            .lamp.clicked {
+                filter: brightness(5.0) saturate(4.0)
+                    drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.85))
+            }
         </style>
     </head>
 
     
 
     <body>
-        <script>
-            function playAudio(url) {
-                new Audio(url).play();
-            }
-        </script>
-
         <img src="https://media2.giphy.com/media/lL7A3Li0YtFHq/giphy.gif?cid=ecf05e47ah89o71gzz7ke7inrgb1ai1xcbrjnqdf7o890118&ep=v1_stickers_search&rid=giphy.gif" can-move id="openSign" class="sticker"/>
         <img src="images/smokey_hearts.gif" can-move id="smokeyHearts" class="sticker" onclick="playAudio('sounds/smokey_meow.mp3')"/>
         <!-- <img src="images/smokey_spooky.gif" can-move id="smokeySpook" class="sticker"/> -->
         <img src="images/bennyshark.png" can-move id="bennyshark" class="sticker"/>
         <img src="images/smiski.png" can-move id="smiski" class="sticker"/>
         <img src="images/tamagotchi.gif" can-move id="tama" class="sticker"/>
+        <img src="images/slay_lamp.png" can-toggle id="slay" class="lamp"/>
 
         <!-- Import playhtml library -->
         <script type="module" src="https://unpkg.com/playhtml@latest/dist/init.es.js"></script>
